@@ -3,38 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My WSL Docker Page</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kowsika A | Portfolio</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto');
+
         body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            color: white;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #101214;
+            color: #7A7C80;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        h2, .white {
+            color: #fff;
+        }
+
+        a {
+            color: #7A7C80;
+            text-decoration: none;
+        }
+
+        .section-1 {
+            padding-top: 40vh;
             text-align: center;
         }
-        .container {
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+        .section-1 p {
+            font-size: 1.1rem;
+            margin: 0;
         }
-        h1 {
-            font-size: 2.5em;
+
+        .section-1 h2 {
+            font-size: 1.7rem;
             margin-bottom: 10px;
         }
-        p {
-            font-size: 1.2em;
+
+        .section-1 a {
+            font-size: 1.5rem;
+            padding: 10px;
+        }
+
+        .section-2 {
+            padding-top: 10vh;
+            width: 70%;
+        }
+
+        .section-2 h2 {
+            font-size: 1.7rem;
+            margin-bottom: 10px;
+        }
+
+        .section-2 p {
+            font-size: 1.1rem;
+            padding-bottom: 10px;
+            margin: 0;
+        }
+
+        .section-1 a:hover, .section-2 a:hover {
+            color: #fff;
+            transition: 0.3s;
+        }
+
+        @media(max-width:780px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .section-1 {
+                padding-top: 5rem;
+            }
+            .section-2 {
+                padding-left: 1.5rem;
+                padding-top: 2rem;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to Kowsika A's Website</h1> 
-        <p>Deployed via Jenkins & Docker on WSL.</p>
+    <div class="grid-2">
+        <div class="section-1">
+            <i class="fas fa-code fa-5x white"></i>
+            <h2>Kowsika A</h2>
+            <p>Perundurai, India</p>
+            <a href="https://www.linkedin.com/in/kowsika-a-609566259/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/kowsika-arumugamm"><i class="fab fa-github"></i></a>
+        </div>
+
+        <div class="section-2">
+            <h2>About</h2>
+            <p>Passionate software developer with expertise in **Angular, React, Node.js, MongoDB, PostgreSQL, and Flutter**. Experienced in full-stack development, web applications, and cloud deployment using Docker & Jenkins.</p>
+
+            <h2>Experience</h2>
+            <p><strong>Web Development Intern at Cognifyz Technologies</strong> (Aug 2024 - Sep 2024)</p>
+            <p>Worked on a **React-based portfolio project**, implementing clean UI/UX designs, dynamic components, and backend integration.</p>
+
+            <h2>Skills</h2>
+            <p>**Frontend:** Angular, React.js, HTML, CSS, JavaScript</p>
+            <p>**Backend:** Node.js, Express.js, MongoDB, PostgreSQL</p>
+            <p>**DevOps:** Docker, Jenkins, WSL</p>
+            <p>**Mobile Development:** Flutter</p>
+
+            <h2>Projects</h2>
+            <p>Developed multiple projects in **React, Angular, and MERN stack**, focusing on user experience, security, and performance.</p>
+
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:kowsikaa@example.com">kowsikaa@example.com</a></p>
+            <p>GitHub: <a href="https://github.com/kowsika-arumugamm">github.com/kowsika-arumugamm</a></p>
+        </div>
     </div>
 </body>
 </html>
